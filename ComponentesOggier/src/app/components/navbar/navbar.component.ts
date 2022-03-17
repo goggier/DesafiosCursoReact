@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  boolInicio: boolean = true;
+  boolAgentes: boolean = true;
 
   constructor() { }
 

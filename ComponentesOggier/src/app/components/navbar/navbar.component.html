@@ -5,10 +5,19 @@
     <div class="menu-list">
 
         <ul id="menu-content" class="menu-content collapse out">
-            <li [ngClass]="{'active': boolInicio}">
+            <li>
                 <a>
-                    <i class="fa fa-gamepad fa-lg text text-center"></i> Agentes
-                    <!-- <i class="fa-solid fa-gamepad-modern"></i>Inicio -->
+                    <i class="fa fa-gamepad fa-lg text text-center"></i> Inicio.
+                </a>
+            </li>
+            <li [ngClass]="{'active': boolAgentes}">
+                <a>
+                    <i class="fa fa-users fa-lg text text-center"></i> Agentes.
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="fa fa-comment fa-lg text text-center"></i> Sobre nosotros.
                 </a>
             </li>
         </ul>
