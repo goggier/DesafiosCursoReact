@@ -1,0 +1,13 @@
+#navbar {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.appnavbar {
+    padding-right: 0px;
+}
+
+.image-background {
+    background-image: url("https://i.blogs.es/78bc94/valorant2/1366_2000.jpg");
+}

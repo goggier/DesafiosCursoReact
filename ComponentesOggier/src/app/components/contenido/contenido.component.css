@@ -1,0 +1,17 @@
+.image {
+    width: 100%;
+    /* max-width: 500px; */
+    height: 100%;
+    max-height: 600px;
+    background-size: auto;
+}
+
+.image-background {
+    /* width: auto; */
+    height: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhjgaoHxe4smF9RlsH6lLz5JsL278WsYOPA&usqp=CAU");
+}
+
+.estiloBtn {
+    height: 43px;
+}
