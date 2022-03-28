@@ -8,9 +8,7 @@ import { Alumno } from 'src/app/interfaces/Alumno.interface';
 })
 export class ContenidoComponent implements OnInit {
 
-  fechaIngresoAlumno = new Date();
   listaAlumnos: Alumno[] = this.getAlumnos();
-  condicion: number = 24;
   revertido: boolean = false;
 
   constructor() { }

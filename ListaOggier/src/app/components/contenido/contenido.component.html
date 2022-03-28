@@ -15,7 +15,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- <tr [ngClass]="alumno.edad > 24 ? 'alumnoMayor' : ''" *ngFor="let alumno of listaAlumnos; let i = index"> -->
                     <tr [ngClass]="getClass(alumno)" *ngFor="let alumno of listaAlumnos; let i = index">
                         <th scope="row">{{i+1}}</th>
                         <td class="text-center">{{alumno.nombre | uppercase}}</td>
