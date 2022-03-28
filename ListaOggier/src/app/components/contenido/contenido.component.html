@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card d-flex mt-5 justify-content-center align-content-center">
+        <h5 class="card-header">Lista de alumnos</h5>
+        <div class="card-body">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th class="text-center" scope="col">Nombre</th>
+                        <th class="text-center" scope="col">Apellido</th>
+                        <th class="text-center" scope="col">Edad</th>
+                        <th class="text-center" scope="col">Email</th>
+                        <th class="text-center" scope="col">Fecha de Igreso</th>
+                        <th class="text-center" scope="col">Celular</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr [ngClass]="alumno.edad > 24 ? 'alumnoMayor' : ''" *ngFor="let alumno of listaAlumnos; let i = index"> -->
+                    <tr [ngClass]="getClass(alumno)" *ngFor="let alumno of listaAlumnos; let i = index">
+                        <th scope="row">{{i+1}}</th>
+                        <td class="text-center">{{alumno.nombre | uppercase}}</td>
+                        <td class="text-center">{{alumno.apellido | uppercase}}</td>
+                        <td class="text-center">{{alumno.edad}}</td>
+                        <td class="text-center">{{alumno.email}}</td>
+                        <td class="text-center">{{alumno.fechaIngreso}}</td>
+                        <td class="text-center">{{alumno.celular}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex">
+                <a [style.color]="revertido ? 'black' : 'white'" [style.background-color]="revertido ? 'grey' : 'blue'" class="btn btn-sm ms-auto mb-2 estiloBtn" (click)="revertirCondicionTabla()">Revertir</a>
+            </div>
+        </div>
+    </div>
+</div>
